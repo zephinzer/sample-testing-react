@@ -29,8 +29,8 @@ Or else plain ol' `npm` will do:
 # npm install
 ```
 
-## Run Karma functinoal tests
-To run the Karma tests (which run Enzyme):
+## Run Karma unit/system tests
+To run the Karma tests (which runs the Enzyme tests):
 
 ```bash
 # npm run test
@@ -40,7 +40,7 @@ Coverage reports will be available in the `/static/coverage/karma` folder.
 
 Run `npm run dev` and access it at http://localhost:3000/static/coverage/karma/index.html.
 
-## RUn ESLint code quality checks
+## Run ESLint code quality checks
 To run ESLint:
 
 ```bash
@@ -66,9 +66,21 @@ To run the Feature tests (which uses Codecept):
 # npm run selenium
 ```
 
+Wait till you see a line of output that looks like the following before proceeding:
+
+```
+[INFO  - YYYY-MM-DDTHH:mm:ss.XXXX] GhostDriver - Main - running on port 4444
+```
+
 2) In another terminal, run the application:
 ```bash
 # npm run dev
+```
+
+Wait till you see a line of output that looks like the following before proceeding:
+
+```
+Compiled successfully in ???ms
 ```
 
 3) Finally in a last terminal, run Codecept:
