@@ -1,0 +1,23 @@
+{
+  "tests": "./test/features/*.feature.js",
+  "timeout": 10000,
+  "output": "./static/codecept/artifacts",
+  "helpers": {
+    "SeleniumWebdriver": {
+      "url": "http://localhost:3000",
+      "browser": "chrome"
+    }
+  },
+  "include": {
+    "I": "./test/features/helper.js"
+  },
+  "bootstrap": false,
+  "mocha": {
+    "reporterOptions": {
+      "reportDir": "static/coverage/codecept",
+      "reportFilename": "index",
+      "reportTitle": "CodeceptJs Report"
+    }
+  },
+  "name": "example-repo"
+}

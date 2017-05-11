@@ -1,0 +1,19 @@
+{
+  "parserOptions": {
+    "ecmaVersion": 5,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "extends": [
+    "google"
+  ],
+  "plugins": [
+    "react"
+  ],
+  "rules": {
+    "react/jsx-uses-react": "error",
+    "react/jsx-uses-vars": "error"
+  }
+}
